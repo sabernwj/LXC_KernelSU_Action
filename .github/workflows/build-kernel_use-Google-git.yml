@@ -79,8 +79,8 @@ jobs:
     - name: Download Google_gcc-4.9 
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-         git clone -q --depth=1 --single-branch https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b android-13.0.0_r0.130 gcc-64
-         git clone -q --depth=1 --single-branch https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 -b android-13.0.0_r0.130 gcc-32
+         git clone -q --depth=1 --single-branch https://github.com/GrowtopiaJaw/aarch64-linux-android-4.9.git -b google gcc-64
+         git clone -q --depth=1 --single-branch https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9.git -b lineage-19.1 gcc-32
 
     - name: Download mkbootimg tools
       if: env.BUILD_BOOT_IMG == 'true'
