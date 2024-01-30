@@ -1,4 +1,4 @@
-name: Build kernel by clang-r498229b
+name: Build kernel by clang-r510928
 on:
   watch:
     types: [started]
@@ -74,7 +74,7 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
         mkdir ./clang-aosp 
-        wget -O clang.tar.gz https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r498229b.tar.gz
+        wget -O clang.tar.gz https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r510928.tar.gz
         tar -C clang-aosp/ -xf clang.tar.gz
         wget https://kali.download/nethunter-images/toolchains/google_aarch64-4.9.tar.xz
         wget https://kali.download/nethunter-images/toolchains/google_armhf-4.9.tar.xz
