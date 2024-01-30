@@ -73,7 +73,7 @@ jobs:
       if: env.USE_CUSTOM_CLANG != 'true'
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        git clone -q --depth=1 --single-branch https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 -b ${{ env.CLANG_BRANCH }} clang-aosp
+        git clone -q --depth=1 --single-branch https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b clang-aosp
         
 
     - name: Download Google_gcc-4.9 
